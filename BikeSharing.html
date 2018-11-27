@@ -300,7 +300,7 @@ zeri&lt;-which(d$windspeed==0)
 # myrf_wind &lt;- randomForest(windspeed ~ season+weather+humidity+month+temp+year+atemp, dwind_train, ntree=250, importance=T)
 # ywind &lt;- predict(myrf_wind, dwind_test)
 # write.csv(ywind, './new_data/windspeed.csv',row.names = F)
-d$windspeed[zeri]&lt;-read.csv(&quot;https://raw.githubusercontent.com/fabiomarigo7/data-mining-competitions/master/BikeSharing%20Competition/new_data/windspeed.csv&quot;)$x
+d$windspeed[zeri]&lt;-read.csv(&quot;https://raw.githubusercontent.com/fabiomarigo7/data-mining/master/source/BikeSharing%20Competition/new_data/windspeed.csv&quot;)$x
 
 #--------------------------------------------------------#
 # METTO REGISTERED, CASUAL, COUNT IN FONDO
