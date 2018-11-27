@@ -127,6 +127,18 @@ $(document).ready(function () {
 <p>NICKNAME: giabellianna l.mandelli17 fabio.marigo</p>
 <p>TEAM: LAF</p>
 <p>ROUND: 1st</p>
+<div id="summary" class="section level3">
+<h3>Summary</h3>
+<p>Our strategy was:</p>
+<ul>
+<li>Predict separately the two variables “Registered” and “Casual”, and then “Count” as their sum;</li>
+<li>Transform the target variables to log(x+1);</li>
+<li>Fill the “Windspeed” variable missing values with a randomForest regression;</li>
+<li>Discretize continuous attributes with simple rpart trees splits, choosing at first “Registered”, then “Casual” as response;</li>
+<li>Create new features, e.g. hourly average of “Registered” and “Casual”;</li>
+<li>Random Forest algorithm, using different sets of variables for “Registered” and “Casual”.</li>
+</ul>
+</div>
 <div id="references" class="section level2">
 <h2>References:</h2>
 <ul>
